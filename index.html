@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя страница</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f3f4f6;
+        }
+        button {
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Добро пожаловать на мою страницу!</h1>
+    <p>Нажми на кнопку, чтобы увидеть сообщение!</p>
+    <button onclick="showMessage()">Нажми меня</button>
+    <p id="message"></p>
+
+    <script>
+        function showMessage() {
+            const message = document.getElementById('message');
+            message.textContent = "Привет! Это динамическое сообщение :)";
+        }
+    </script>
+</body>
+</html>
