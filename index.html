@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comatose</title>
+    <title>[PROJECT PURIFICATION]</title>
     <style>
         @font-face {
             font-family: "RetroFont";
@@ -39,9 +39,42 @@
             color: #9370db;
             transform: scale(1.1);
         }
+        h2 {
+            font-size: 30px; /* Slightly smaller size */
+            margin: 20px 0;
+            color: #8a2be2;
+            font-family: "RetroFont", monospace;
+            text-shadow: 0 0 20px #6a5acd, 0 0 40px #7b68ee;
+            transition: transform 0.5s ease, color 0.5s ease;
+            background: none;
+            cursor: pointer;
+        }
+        h2:hover {
+            color: #9370db;
+            transform: scale(1.1);
+        }
         .quote {
-            font-size: 16px;
+            font-size: 18px;
             margin-bottom: 20px;
+            font-style: italic;
+            color: #8a2be2;
+            text-shadow: 0 0 10px #6a5acd, 0 0 20px #7b68ee;
+        }
+        .member-list {
+            margin-top: 30px;
+            padding: 10px;
+            border: 2px solid #8a2be2;
+            display: inline-block;
+            text-align: left;
+            width: 80%;
+        }
+        .member-list p {
+            margin: 10px 0;
+        }
+        .separator {
+            width: 90%;
+            border-top: 2px solid #8a2be2;
+            margin: 30px 0;
         }
         .left-section {
             color: #b19cd9;
@@ -50,12 +83,10 @@
             text-align: left;
             margin-top: 20px;
             max-width: 800px;
-            padding-left: 20px;  /* Выравнивание текста слева */
+            padding-left: 20px;
         }
-        .separator {
-            width: 100%;
-            border-top: 1px solid #8a2be2;
-            margin-top: 20px;  /* Место для разделителя после текста */
+        .center-text {
+            text-align: center; /* Centers the text */
         }
         .image-container {
             width: 100%;
@@ -66,28 +97,50 @@
             max-width: 100%;
             height: auto;
         }
+        .center-list {
+            text-align: left; /* Align the list items to the left */
+            list-style: none;
+            padding-left: 0;
+        }
+        .center-list li {
+            margin: 10px 0;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Comatose</h1>
+        <h1>COMATOSE x PURIFICATION</h1>
         <p class="quote">
-            Whoever, having knowledge, pretends that he does not know, is above all. 
-            Whoever, having no knowledge, pretends to know, is sick.
+            Only that which is good can rise above the darkness that seeks to consume. 
         </p>
+    </div>
+
+    <h2 class="center-text">[MEMBERS]</h2> <!-- Smaller MEMBERS title with glow effect -->
+
+    <div class="member-list">
+        <p>Comatose - Owner (Discord: @comatose.exe)</p>
+        <p>Nivix - Co-Owner (Discord: @nivixi)</p>
+        <p>Want to become a member? Contact @comatose.exe on discord</p>
+    </div>
+
+    <!-- Added margin-bottom to create space between the member list and the next section -->
+    <div style="margin-bottom: 30px;"></div>
+
+    <div class="center-text">
+        <h2>[What is Project Purification?]</h2> <!-- Smaller title with glow effect -->
+        <p>Project Purification is a project where our group help people and deal with criminals. You may contact one of our members in cases such as:</p>
     </div>
 
     <div class="left-section">
-        <p>
-            PROJECT EXTINCTION<br>
-            testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest text<br>
-            testtesttesttesttesttesttesttesttesttest<br>
-            stesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttestteste.<br>
-            Image 
-        </p>
+        <ul class="center-list">
+            <li>🛡️ You are threatened with disclosure of confidential information (doxing) provided that you have done nothing wrong</li>
+            <li>⚠️ You want to report to us about a violation of the law or a criminal (e.g. pedophile, scammer, cyberstalker, hacker, doxxer, animal abuser etc.)</li>
+            <li>💰 You have been scammed for money. We will do everything possible to return your funds and stop the scammer's activities.</li>
+            <li>🕵🏻 You need help in anonymization and hiding your data on the Internet. You can contact us and we will give detailed instructions and help individually.</li>
+        </ul>
     </div>
 
-    <div class="separator"></div>  <!-- Теперь разделитель идет после текста -->
+    <div class="separator"></div> <!-- Purple separator -->
 
     <div class="image-container">
         <img src="image.png" alt="Image">
