@@ -7,63 +7,68 @@
     <style>
         @font-face {
             font-family: "RetroFont";
-            src: url("https://fonts.cdnfonts.com/s/20568/retroica.woff") format("woff"); /* Шрифт из свободного источника */
+            src: url("https://fonts.cdnfonts.com/s/20568/retroica.woff") format("woff");
         }
         body {
             background-color: black;
-            color: #b19cd9; /* Фиолетово-синий оттенок */
+            color: #b19cd9;
             font-family: 'Courier New', Courier, monospace;
             margin: 0;
             padding: 0;
-            text-align: center;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            position: relative;
+            text-align: center;
         }
         h1 {
             font-size: 48px;
             margin: 20px 0;
             color: #8a2be2;
-            font-family: "RetroFont", monospace; /* Установлен шрифт */
+            font-family: "RetroFont", monospace;
             text-shadow: 0 0 20px #6a5acd, 0 0 40px #7b68ee;
             transition: transform 0.5s ease, color 0.5s ease;
-            background: none; /* Убрано фоновое выделение */
+            background: none;
             cursor: pointer;
         }
         h1:hover {
-            color: #9370db; /* Изменение цвета на более светлый */
-            transform: scale(1.1); /* Увеличение без вращения */
+            color: #9370db;
+            transform: scale(1.1);
         }
         .quote {
             font-size: 16px;
             margin-bottom: 20px;
         }
-        .left-text {
+        .left-section {
             position: absolute;
             top: 20px;
             left: 20px;
-            color: #8a2be2;
-            font-family: "RetroFont", monospace;
-            font-size: 20px;
-            text-shadow: 0 0 10px #6a5acd, 0 0 20px #7b68ee;
+            color: #b19cd9;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .separator {
+            border-top: 1px solid #8a2be2;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="left-text">
-            This is<br>
-            some example<br>
-            left-aligned text.<br>
-            It looks awesome!
-        </div>
         <h1>Comatose</h1>
         <p class="quote">
             Whoever, having knowledge, pretends that he does not know, is above all. 
             Whoever, having no knowledge, pretends to know, is sick.
+        </p>
+    </div>
+    <div class="left-section">
+        <div class="separator"></div>
+        <p>
+            This is some<br>
+            left-aligned text<br>
+            with a stylish<br>
+            separator above.
         </p>
     </div>
 </body>
