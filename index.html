@@ -18,6 +18,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            min-height: 100vh;
         }
         .container {
             max-width: 800px;
@@ -49,11 +50,12 @@
             text-align: left;
             margin-top: 20px;
             max-width: 800px;
+            padding-left: 20px;  /* Выравнивание текста слева */
         }
         .separator {
             width: 100%;
             border-top: 1px solid #8a2be2;
-            margin: 20px 0;
+            margin-top: 20px;  /* Место для разделителя после текста */
         }
         .image-container {
             width: 100%;
@@ -76,14 +78,16 @@
     </div>
 
     <div class="left-section">
-        <div class="separator"></div>
         <p>
-            This is some<br>
-            left-aligned text<br>
-            with a stylish<br>
-            separator above.
+            PROJECT EXTINCTION<br>
+            testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest text<br>
+            testtesttesttesttesttesttesttesttesttest<br>
+            stesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttestteste.<br>
+            Image 
         </p>
     </div>
+
+    <div class="separator"></div>  <!-- Теперь разделитель идет после текста -->
 
     <div class="image-container">
         <img src="image.png" alt="Image">
