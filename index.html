@@ -21,6 +21,7 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            position: relative;
         }
         h1 {
             font-size: 48px;
@@ -34,68 +35,36 @@
         }
         h1:hover {
             color: #9370db; /* Изменение цвета на более светлый */
-            transform: scale(1.1) rotate(-2deg);
+            transform: scale(1.1); /* Увеличение без вращения */
         }
         .quote {
             font-size: 16px;
             margin-bottom: 20px;
         }
-        .members {
-            text-align: left;
-            margin: 0 auto;
-            padding: 10px;
-            border: 1px solid #7b68ee;
-        }
-        .members ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .members li {
-            margin: 5px 0;
-        }
-        .members a {
+        .left-text {
+            position: absolute;
+            top: 20px;
+            left: 20px;
             color: #8a2be2;
-            text-decoration: none;
-        }
-        .members a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            margin-top: 20px;
-            border-top: 1px solid #7b68ee;
-            padding: 10px;
-        }
-        footer a {
-            color: #7b68ee;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        footer a:hover {
-            text-decoration: underline;
+            font-family: "RetroFont", monospace;
+            font-size: 20px;
+            text-shadow: 0 0 10px #6a5acd, 0 0 20px #7b68ee;
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="left-text">
+            This is<br>
+            some example<br>
+            left-aligned text.<br>
+            It looks awesome!
+        </div>
         <h1>Comatose</h1>
         <p class="quote">
             Whoever, having knowledge, pretends that he does not know, is above all. 
             Whoever, having no knowledge, pretends to know, is sick.
         </p>
-        <div class="members">
-            <h2>Members:</h2>
-            <ul>
-                <li>• INVENTOR * [<a href="https://t.me/@obolic" target="_blank">t.me/@obolic</a>] [<a href="https://discord.com/user/@chasming" target="_blank">discord.com/user/@chasming</a>]</li>
-                <li>• Midra * [<a href="https://t.me/@newwayaftersnos" target="_blank">t.me/@newwayaftersnos</a>] [<a href="https://discord.com/user/@skypelegend" target="_blank">discord.com/user/@skypelegend</a>]</li>
-                <li>• Mira * [<a href="https://t.me/miracloud" target="_blank">https://t.me/miracloud</a>]</li>
-                <li>• ... (и так далее для других участников)</li>
-            </ul>
-        </div>
     </div>
-    <footer>
-        <a href="https://telegram.me/" target="_blank">Telegram Channel</a> |
-        <a href="https://discord.com/" target="_blank">Discord Server</a> |
-        <a href="https://doxbin.com/" target="_blank">Doxbin</a>
-    </footer>
 </body>
 </html>
