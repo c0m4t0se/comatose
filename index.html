@@ -1,41 +1,88 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя страница</title>
+    <title>1017 KINGDOM</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            background-color: black;
+            color: red;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
             text-align: center;
-            background-color: #f3f4f6;
         }
-        button {
-            margin: 20px;
-            padding: 10px 20px;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            margin: 20px 0;
+            text-shadow: 0 0 10px red;
+        }
+        .quote {
             font-size: 16px;
-            cursor: pointer;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
+            margin-bottom: 20px;
         }
-        button:hover {
-            background-color: #45a049;
+        .members {
+            text-align: left;
+            margin: 0 auto;
+            padding: 10px;
+            border: 1px solid red;
+        }
+        .members ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .members li {
+            margin: 5px 0;
+        }
+        .members a {
+            color: red;
+            text-decoration: none;
+        }
+        .members a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 20px;
+            border-top: 1px solid red;
+            padding: 10px;
+        }
+        footer a {
+            color: red;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>Добро пожаловать на мою страницу!</h1>
-    <p>Нажми на кнопку, чтобы увидеть сообщение!</p>
-    <button onclick="showMessage()">Нажми меня</button>
-    <p id="message"></p>
-
-    <script>
-        function showMessage() {
-            const message = document.getElementById('message');
-            message.textContent = "Привет! Это динамическое сообщение :)";
-        }
-    </script>
+    <div class="container">
+        <h1>1017 KINGDOM</h1>
+        <p class="quote">
+            Whoever, having knowledge, pretends that he does not know, is above all. 
+            Whoever, having no knowledge, pretends to know, is sick.
+        </p>
+        <div class="members">
+            <h2>Members:</h2>
+            <ul>
+                <li>• INVENTOR * [<a href="https://t.me/@obolic" target="_blank">t.me/@obolic</a>] [<a href="https://discord.com/user/@chasming" target="_blank">discord.com/user/@chasming</a>]</li>
+                <li>• Midra * [<a href="https://t.me/@newwayaftersnos" target="_blank">t.me/@newwayaftersnos</a>] [<a href="https://discord.com/user/@skypelegend" target="_blank">discord.com/user/@skypelegend</a>]</li>
+                <li>• Mira * [<a href="https://t.me/miracloud" target="_blank">https://t.me/miracloud</a>]</li>
+                <li>• ... (и так далее для других участников)</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <a href="https://telegram.me/" target="_blank">Telegram Channel</a> |
+        <a href="https://discord.com/" target="_blank">Discord Server</a> |
+        <a href="https://doxbin.com/" target="_blank">Doxbin</a>
+    </footer>
 </body>
 </html>
